@@ -1,0 +1,27 @@
+{
+  "name": "Codigo",
+  "version": "1.0.0",
+  "description": "A beautiful Markdown editor and note-taking app made for programmers.",
+  "author": "Alfonz",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "generate:gh": "DEPLOY_ENV=GH_PAGES nuxt generate",
+    "deploy": "push-dir --dist=dist --branch=gh-pages"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0",
+    "@nuxtjs/dotenv": "^1.4.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^1.0.0",
+    "node-sass": "^4.13.1",
+    "pug": "^2.0.4",
+    "pug-plain-loader": "^1.0.0",
+    "push-dir": "^0.4.1",
+    "sass-loader": "^8.0.2"
+  }
+}
