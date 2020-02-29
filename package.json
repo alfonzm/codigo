@@ -10,7 +10,8 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "generate:gh": "DEPLOY_ENV=GH_PAGES nuxt generate",
-    "deploy": "gh-pages -d dist --dotfiles"
+    "deploy": "gh-pages -d dist --dotfiles",
+    "prod": "npm run generate:gh && npm run deploy"
   },
   "dependencies": {
     "nuxt": "^2.0.0",
