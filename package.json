@@ -10,7 +10,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "generate:gh": "DEPLOY_ENV=GH_PAGES nuxt generate",
-    "deploy": "push-dir --dist=dist --branch=gh-pages"
+    "deploy": "gh-pages -d dist --dotfiles"
   },
   "dependencies": {
     "nuxt": "^2.0.0",
@@ -18,10 +18,10 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^1.0.0",
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1",
     "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0",
-    "push-dir": "^0.4.1",
     "sass-loader": "^8.0.2"
   }
 }

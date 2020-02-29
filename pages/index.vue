@@ -20,7 +20,10 @@
           ref="demoVideo"
         )
     footer.footer
-      span © {{ new Date().getFullYear() }}. Made by Alfonz Montelibano.
+      span
+        | © {{ new Date().getFullYear() }}. Made by Alfonz Montelibano.
+        |
+        a.footer__link(href="https://github.com/alfonzm/codigo" target="_blank") </>
 </template>
 
 <script>
@@ -98,4 +101,7 @@ $secondaryBlack: #999
 .footer
   @apply tw-mx-4 tw-my-10 tw-text-center
   color: $secondaryBlack
+
+  &__link
+    @apply tw-underline
 </style>
